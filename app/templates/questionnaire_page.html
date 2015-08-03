@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+	<form id="qform" align = "center" data-parsley-validate onsubmit="submitAnswers(); return false;" novalidate>
+		What smartphone do you have?<br>
+		<select data-parsley-required data-parsley-type="alphanum" name="phonetype">
+		  <option value="iphone">iPhone</option>
+		  <option value="android">Android</option>
+		  <option value="windows">Windows</option>
+		  <option value="other">other</option>
+		</select>
+		<br><br>
+		Does it have a data plan?<br>
+		<select data-parsley-required data-parsley-type="alphanum" name="dataplan">
+		  <option value="yes">yes</option>
+		  <option value="no">no</option>
+		</select>
+		<br><br>
+		Are you older than 21 years?<br>
+		<select data-parsley-required data-parsley-type="alphanum" name="21yrsorolder" data-parsley-pattern="^yes$" data-parsley-error-message="Unfortunately at this time, we can only accept applicants who meet this requirement.">
+		  <option value="yes">yes</option>
+		  <option value="no">no</option>
+		</select>
+		<br><br>
+		Are you able to lift 30-40pounds?<br>
+		<select data-parsley-required data-parsley-type="alphanum" name="canlift" data-parsley-pattern="^yes$" data-parsley-error-message="Unfortunately at this time, we can only accept applicants who meet this requirement.">
+		  <option value="yes">yes</option>
+		  <option value="no">no</option>
+		</select>
+		<br><br>
+		Do you have a personal car?<br>
+		<select data-parsley-required data-parsley-type="alphanum" name="hascar" data-parsley-error-message="Please explain in a few words.">
+		  <option value="yes">yes</option>
+		  <option value="no">no</option>
+		</select>
+		<br><br>
+		Why do you wish to work for Instacart?<br>
+		<textarea data-parsley-required></textarea>
+		<br><br><br>
+		<input type="submit" value="Submit Answers" >
+	</form>
+
+{% endblock %}

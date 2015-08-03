@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<center>
+	Great! Your application is complete. <br>
+	Our recruiting team will be in touch with you shortly :)
+
+	<br><br><br><br>
+	Here's are key application details, for your reference:
+	<br><br>
+
+	<i>Firstname</i> : {{applicant.firstname}} <br>
+	<i>Lastname</i> : {{applicant.lastname}} <br>
+	<i>Email</i> : {{applicant.email}} <br>
+	<i>Phone</i> : {{applicant.phone}} <br>
+	<i>Zipcode</i> : {{applicant.zipcode}} <br>
+
+	</center>
+
+{% endblock %}

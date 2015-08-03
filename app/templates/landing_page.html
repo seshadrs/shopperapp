@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+	<form id="form" align = "center" data-parsley-validate  onsubmit="submitNewApplication(); return false;">
+		First name:<br>
+		<input type="text" name="firstname" data-parsley-required data-parsley-pattern="^[a-zA-Z]{1,50}$">
+		<br><br>
+		Last name:<br>
+		<input type="text" name="lastname" data-parsley-required data-parsley-pattern="^[a-zA-Z]{1,50}$">
+		<br><br>
+		Email:<br>
+		<input type="text" id="email" name="email" data-parsley-required type="email" data-parsley-type="email">
+		<br><br>
+		Phone:<br>
+		<input type="text" name="phone" data-parsley-required data-parsley-type="digits" data-parsley-length="[10,10]">
+		<br><br>
+		Zipcode:<br>
+		<input type="text" name="zipcode" data-parsley-required data-parsley-type="digits" data-parsley-length="[5,5]">
+		<br><br><br>
+		<input type="submit" value="Apply Now" >
+	</form>
+
+{% endblock %}

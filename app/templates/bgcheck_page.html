@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<form id="form" align = "center" data-parsley-validate  onsubmit="submitBgcheck(); return false;">
+		Do you consent to a background check?
+		<br><br>
+		<input type="submit" value="Yes" >
+	</form>
+
+{% endblock %}
