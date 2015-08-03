@@ -9,10 +9,10 @@ python db_create.py
 
 RUN APP:
 - To run on default port (5000) :  "python run.py"
-- To run on a chosen port :  "python run.py <port>"
+- To run on a chosen port :  "python run.py <<PORT>>"
 
 TEST FUNNEL STATISTICS:
-- "http://127.0.0.1:<port>/funnels.json?start_date=2015-7-05&end_date=2015-8-09"
+- "http://127.0.0.1:5000/funnels.json?start_date=2015-7-05&end_date=2015-8-09"
 
 
 IMPLEMENTATION:
