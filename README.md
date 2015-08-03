@@ -12,7 +12,7 @@ RUN APP:
 - To run on a chosen port :  "python run.py <port>"
 
 TEST FUNNEL STATISTICS:
-- "http://127.0.0.1:5001/funnels.json?start_date=2015-7-05&end_date=2015-8-09"
+- "http://127.0.0.1:<port>/funnels.json?start_date=2015-7-05&end_date=2015-8-09"
 
 
 IMPLEMENTATION:
