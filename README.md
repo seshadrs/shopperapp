@@ -17,7 +17,7 @@ TEST FUNNEL STATISTICS:
 
 IMPLEMENTATION:
 - Single page app that uses Python Flask as server
-- REST HTTP APIs exposed
-- Server is stateless/session-unaware. EmailId used as session/user identifier
-- Sqlite DB used to store Applicant, Event (defined in models.py)
+- REST HTTP APIs exposed for Applicant, Event models
+- Applicant EmailId used as session/user identifier
+- Sqlite DB used to store Applicant, Event entries
 - Parsley.js used for form validation
