@@ -1,7 +1,10 @@
 # shopperapp
 Personal Shopper Application
 
-IINSTALLING DEPENDENCIES:
+REQUIREMENTS:
+python 2.7 (Should work on 2.6 as well. Only tested 2.7)
+
+INSTALLING DEPENDENCIES:
 pip install -r requirements.txt
 
 DB SETUP:
@@ -12,7 +15,7 @@ RUN APP:
 - To run on a chosen port :  "python run.py [PORT]"
 
 TEST FUNNEL STATISTICS:
-- "http://127.0.0.1:5000/funnels.json?start_date=2015-7-05&end_date=2015-8-09"
+- "http://127.0.0.1:[PORT]/funnels.json?start_date=2015-7-05&end_date=2015-8-09"
 
 
 IMPLEMENTATION:
